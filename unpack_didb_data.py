@@ -219,7 +219,7 @@ def main(input_root, output_root):
                 full_path = os.path.join(root, file)
                 relative_path = os.path.relpath(root, input_root)
                 
-                archive_dump_folder = os.path.join(output_root, relative_path, f'{file}_extracted')
+                archive_dump_folder = os.path.join(output_root, relative_path, file[:-4])
 
                 # Check if the archive has already been unpacked.
                 if os.path.exists(archive_dump_folder):
