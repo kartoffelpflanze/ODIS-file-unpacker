@@ -43,8 +43,6 @@ Unprotected archives are skipped.
 This script searches for JAR or ZIP archives (recursively) starting from the given folder.
 It unpacks all files, maintaining the original structure.
 
-It must be mentioned that these archives are massive, so maybe copy the files you want to some other folder instead of asking the script to unpack everything.
-
 > [!TIP]
 > ```powershell
 > python unpack_didb_data.py "C:\ProgramData\OS\DIDB\data" "O:/DIDB_data"
