@@ -20,6 +20,7 @@ EXTENSION_CONFIG = {
     '.properties': True,      
     '.sk2': True,      
     '.sk3': True,      
+    '.html': True,      
     '.png': False,
     '.jpg': False,
 }
