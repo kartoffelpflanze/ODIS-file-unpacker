@@ -19,6 +19,7 @@ EXTENSION_CONFIG = {
     '.xml': True,      
     '.properties': True,      
     '.sk2': True,      
+    '.sk3': True,      
     '.png': False,
     '.jpg': False,
 }
@@ -35,7 +36,7 @@ def is_pass_through(filename):
     return False
 def get_processing_rule(filename):
     for pattern, is_compressed in EXTENSION_CONFIG.items():
-        if filename.endswith(pattern):
+        if filename.lower().endswith(pattern.lower()):
             return True, is_compressed
     return False, False
 
@@ -218,6 +219,12 @@ def main(input_root, output_root):
                 relative_path = os.path.relpath(root, input_root)
                 
                 archive_dump_folder = os.path.join(output_root, relative_path, f'{file}_extracted')
+
+                # Check if the archive has already been unpacked.
+                if os.path.exists(archive_dump_folder):
+                    print(f'[.] Skipping {file} (already unpacked)')
+                    continue
+
                 os.makedirs(archive_dump_folder, exist_ok=True)
                 
                 process_archive(full_path, archive_dump_folder)
