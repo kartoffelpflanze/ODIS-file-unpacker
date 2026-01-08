@@ -14,6 +14,12 @@ Extracting data from `DIDB/db` can be done using my other project: [ODIS-project
 > No databases will ever be provided!
 > Please bring your own :)
 
+The following libraries must be installed beforehand:
+```powershell
+python -m pip install pycryptodome
+python -m pip install blowfish
+```
+
 The DIDB data files (located usually in `C:\ProgramData\OS\DIDB\data`) seem to only be used for the Guided Fault Finding feature.
 They contain PNG images, HTML documents, Java classes, pretty much everything you would see during GFF and behind the scenes for automation.
 
