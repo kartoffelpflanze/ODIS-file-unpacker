@@ -1,6 +1,6 @@
 # ODIS file unpacker
 
-Nefarious Motorsports forum thread: [...](...)
+Nefarious Motorsports forum thread: [http://nefariousmotorsports.com/forum/index.php?topic=24032](http://nefariousmotorsports.com/forum/index.php?topic=24032)
 
 ---
 
