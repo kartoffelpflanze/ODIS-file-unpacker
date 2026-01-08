@@ -18,6 +18,7 @@ EXTENSION_CONFIG = {
     '.class': True,      
     '.xml': True,      
     '.properties': True,      
+    '.sk2': True,      
     '.png': False,
     '.jpg': False,
 }
